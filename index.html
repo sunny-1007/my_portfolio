@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza Voskanian | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка с информацией -->
+        <header class="header">
+            <div class="header-left">
+                <h1>ELIZA VOSKANIAN</h1>
+                <span class="count">JUNIOR WEB DEVELOPER</span>
+            </div>
+            <div class="header-right">
+                <div class="category">
+                    <h2>PROJECTS</h2>
+                    <span class="count" id="project-count">4 PROJECTS</span>
+                </div>
+                <div class="category">
+                    <h2>SKILLS</h2>
+                    <span class="count">7 TECHNOLOGIES</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="gallery">
+            <!-- Обо мне -->
+            <section class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>ABOUT ME</h2>
+                        <p>I'm a passionate junior web developer specializing in creating clean, modern, and responsive interfaces. Currently focused on frontend development with React and vanilla JavaScript.</p>
+                        <div class="contact-links">
+                            <a href="mailto:eliza@example.com">EMAIL</a>
+                            <a href="https://github.com" target="_blank">GITHUB</a>
+                            <a href="https://linkedin.com" target="_blank">LINKEDIN</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/portf.jpg" alt="Eliza Voskanian" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="projects-section">
+                <h2 class="section-title">PROJECTS</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="js">JAVASCRIPT</button>
+                    <button class="filter-btn" data-filter="css">CSS</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="image-item" data-category="js">
+                        <img src="images/flowers.jpg" alt="Interactive Gallery" loading="lazy">
+                        <div class="image-overlay">
+                            <span class="image-title">INTERACTIVE GALLERY</span>
+                            <p class="image-desc">Vanilla JS, CSS Grid, Animations</p>
+                        </div>
+                    </div>
+                    <div class="image-item" data-category="css">
+                        <img src="images/edrian.jpg" alt="Responsive Dashboard" loading="lazy">
+                        <div class="image-overlay">
+                            <span class="image-title">RESPONSIVE DASHBOARD</span>
+                            <p class="image-desc">CSS Flexbox, Mobile First</p>
+                        </div>
+                    </div>
+                    
+                    <div class="image-item" data-category="js">
+                        <img src="images/camera.jpg" alt="Weather Widget" loading="lazy">
+                        <div class="image-overlay">
+                            <span class="image-title">WEATHER WIDGET</span>
+                            <p class="image-desc">API Fetch, Async/Await</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Таблица навыков -->
+            <section class="skills-section">
+                <h2 class="section-title">TECHNOLOGY SKILLS</h2>
+                <div class="table-container">
+                    <table id="skills-table">
+                        <thead>
+                            <tr>
+                                <th>Technology</th>
+                                <th>Level</th>
+                                <th>Experience</th>
+                                <th>Projects</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>Advanced</td>
+                                <td>6 months</td>
+                                <td>12</td>
+                                <td>Junior </td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSS3</td>
+                                <td>Advanced</td>
+                                <td>1 year</td>
+                                <td>10</td>
+                                <td> Junior</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Intermediate</td>
+                                <td>6 months</td>
+                                <td>8</td>
+                                <td>Learning</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Git</td>
+                                <td>Intermediate</td>
+                                <td>1 year</td>
+                                <td>15</td>
+                                <td>Junior</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>Figma</td>
+                                <td>Intermediate</td>
+                                <td>6 months</td>
+                                <td>7</td>
+                                <td>Junior</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>Node.js</td>
+                                <td>Beginner</td>
+                                <td>3 months</td>
+                                <td>2</td>
+                                <td>Learning</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                            <tr>
+                                <td>TypeScript</td>
+                                <td>Beginner</td>
+                                <td>2 months</td>
+                                <td>1</td>
+                                <td>Learning</td>
+                                <td><button class="row-btn">Select</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-controls">
+                    <button id="highlight-js">Highlight JavaScript</button>
+                    <button id="sort-experience">Sort by Experience</button>
+                    <button id="reset-table">Reset</button>
+                </div>
+            </section>
+
+            <!-- Контакты -->
+            <section class="contact-section">
+                <h2 class="section-title">CONTACT FORM</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    <p id="form-message"></p>
+                </form>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="number-large">2025</div>
+            </div>
+            <div class="footer-right">
+                <div class="gallery-title">PORTFOLIO</div>
+                <p class="footer-text">© Eliza Voskanian. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
